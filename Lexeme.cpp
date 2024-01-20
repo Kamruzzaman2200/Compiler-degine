@@ -11,7 +11,7 @@ enum State {
 };
 
 // Function to check if a given lexeme is a valid identifier
-bool isValidIdentifier(string lexeme) {
+bool valid(string lexeme) {
     // Initialize the state of the DFA to q
     State currentState = q;
 
@@ -51,7 +51,7 @@ int main() {
     cin >> input;
 
     // Check if the entered lexeme is a valid identifier and display the result
-    if (isValidIdentifier(input)) {
+    if (valid(input)) {
         cout << "Valid identifier!" << endl;
     } else {
         cout << "Not a valid identifier." << endl;
