@@ -5,7 +5,7 @@
 using namespace std;
 
 // Enumeration to represent the states of the DFA
-enum State {
+enum State { 
     q,
     q1
 };
