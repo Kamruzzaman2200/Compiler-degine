@@ -103,7 +103,9 @@ void tokenize(const string& input) {  // Define a function to tokenize the input
 }
 
 int main() {  // Define the main function
-    string input = "int add ( int a , int b ) { return a + b ; }";  // Define an input string
+    cout << "Enter input string: ";  // Prompt the user to enter an input string
+    string input;  // Declare a string variable to store the input
+    getline(cin, input);  // Read a line of input from the standard input stream
     tokenize(input);  // Call the tokenize function with the input string
     return 0;  // Return 0 to indicate successful execution
 }
